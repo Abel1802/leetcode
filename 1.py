@@ -1,24 +1,27 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
 # date: 2020.02.03
+# updata: 2021-04-09
 '''
     leetcode-1 twoSum
 '''
-class Solution(object):
-    def twoSum(self, nums, target):
-        """
-        :type nums: List[int]
-        :type target: int
-        :rtype: List[int]
-        """
-        # using dict
-        dic = {}
-        for ind, num in enumerate(nums):
-            dic[num] = ind
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        ''' Violent enumeration '''
+        n = len(nums)
+        for i in range(n):
+            for j in range(i+1, n):
+                if nums[i] + nums[j] == target:
+                    return [i, j]
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        ''' Hash '''
+        hashtable = dict()
         for i, num in enumerate(nums):
-            j = dic.get(target - num)
-            if j is not None and j != i:
-                return [i, j]
+            if target - num in hashtable:
+                return [hashtable[target - num], i]
+            hashtable[num] = i
 
 
 if __name__ == "__main__":
