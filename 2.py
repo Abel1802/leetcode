@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
-# author fool; date 2020-02-29
-
-
-
+# author lizhu
+# date 2020-02-29
+# update 2021-04-10
+'''
+    leetcode-2 addTwoNumbers
+'''
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -38,11 +40,4 @@ class Solution:
             cur.next = ListNode(num)
             cur = cur.next
 
-        return ret.next
-
-if __name__ == '__main__':
-    
-    a = 12
-    
-    b, c = divmod(a, 10)
-    print(b, c)
+        return ret.next     #   ret.val = 0
