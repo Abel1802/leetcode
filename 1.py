@@ -28,4 +28,4 @@ if __name__ == "__main__":
     nums = [2, 7, 11, 17]
     target = 9
     solution = Solution()
-    print("the index: {}".format(solution.twoSum(nums, target)))
+    print("The index: {}".format(solution.twoSum(nums, target)))
