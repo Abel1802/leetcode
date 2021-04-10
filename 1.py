@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: UTF-8 -*-
+# author: lizhu
 # date: 2020.02.03
-# updata: 2021-04-09
+# update: 2021-04-09
 '''
     leetcode-1 twoSum
 '''
@@ -13,6 +14,7 @@ class Solution:
             for j in range(i+1, n):
                 if nums[i] + nums[j] == target:
                     return [i, j]
+
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
