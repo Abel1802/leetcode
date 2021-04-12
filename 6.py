@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding:utf-8 -*-
+# author: lizhu
+# date: 2021-04-11
+# email: lzblcu19@gmail.com
 '''
     Leetcode-6 z字形变换
 '''
-import numpy as np
 
 
 class Solution:
